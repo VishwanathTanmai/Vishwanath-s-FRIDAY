@@ -439,7 +439,7 @@ recognition.onresult = function (event) {
       windowsB.push(a)
     }
   
-    if (transcript.includes("search")) {
+   if (transcript.includes("how to")|| transcript.includes('who is') || transcript.includes('what are')) {
       readOut("here's your result");
       let input = transcript.split("");
       input.splice(0, 11);
